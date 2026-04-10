@@ -1,21 +1,20 @@
 import java.util.*;
-public class main {
-    public static void main(String[] args){
-        Scanner sc = new Scanner (System.in);
-        int tax ;
-        int salary = sc.nextInt();
+public class main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
 
-        if (salary <=500000 ){
-            tax = 0;
+        if ((A >= B) && (A >= C)){
+            System.out.print("A is the largest number");
         }
-        else if (salary >=500000 && salary<=1200000){
-            tax = (int)(salary * 0.2);
+        else if ( B >= C){
+            System.out.print("B is largest ");
         }
+        
         else{
-            tax = (int)(salary * 0.3);
-
+            System.out.print("C : is the Largest");
         }
-        System.out.println("Your Tax is " + tax);
     }
 }
-
